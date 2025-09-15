@@ -1,5 +1,94 @@
 # sep_reactjs
 
+## Variables
+
+JavaScript provides three ways to declare variables:
+
+```js
+// var: function-scoped
+var name = 'mahes';
+var name = 'suresh'; // Redeclaration allowed
+
+// let: block-scoped
+let count = 10;
+count = 20; // Re-assignment allowed
+
+// const: block-scoped, cannot be re-assigned
+const age = 18;
+// age = 22; // Error: Assignment to constant variable
+```
+
+## Scope
+
+- **Function Scope** (with `var`):
+```js
+function test() {
+  var x = 10;
+  // x is accessible here
+}
+// x is NOT accessible here
+```
+
+- **Block Scope** (with `let` and `const`):
+```js
+{
+  let y = 20;
+  const z = 30;
+  // y and z are accessible here
+}
+// y and z are NOT accessible here
+```
+
+## Data Types
+
+JavaScript has two main categories of data types:
+
+### Primitive Data Types
+
+```js
+// 1. String
+let str = "string";
+
+// 2. Number
+let num = 1234;
+
+// 3. Boolean
+let isActive = true; // or false
+
+// 4. Undefined
+let a;
+console.log(a); // undefined
+
+// 5. Null
+let b = null; // intentional empty value
+```
+
+### Non-Primitive Data Types
+
+```js
+// Object
+let address = {
+  city: "Hyderabad",
+  state: "TS"
+};
+
+// Array
+let fruits = ["apple", "banana", "cherry"];
+
+// Function
+function fire() {
+  console.log("function fire");
+}
+fire();
+```
+
+
+# Operators
+
+Operators in JavaScript are special symbols or keywords used to perform operations on operands (values and variables). They are essential for manipulating data and controlling logic in your code. JavaScript supports several types of operators, including comparison, arithmetic, assignment, logical, and more.
+
+Below are some of the most commonly used operators:
+
 ## Comparison Operators
 
 ```js
