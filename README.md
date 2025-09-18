@@ -160,3 +160,52 @@ console.log(age > 18 && age < 25); // true
 // OR (||)
 console.log(age > 18 || age < 25); // true
 ```
+
+## Loops
+
+Loops are used to execute a block of code multiple times. JavaScript provides several types of loops:
+
+### for Loop
+
+```js
+for (let i = 0; i < 5; i++) {
+  console.log(i); // Prints 0 to 4
+}
+```
+
+### while Loop
+
+```js
+let count = 0;
+while (count < 3) {
+  console.log(count); // Prints 0, 1, 2
+  count++;
+}
+```
+
+### do...while Loop
+
+```js
+let num = 0;
+do {
+  console.log(num); // Prints 0, 1, 2
+  num++;
+} while (num < 3);
+```
+
+### for...of Loop (for arrays)
+
+```js
+const fruits = ["apple", "banana", "cherry"];
+for (const fruit of fruits) {
+  console.log(fruit); // Prints each fruit
+}
+```
+### for...in Loop (for objects)
+
+```js
+const address = { city: "Hyderabad", state: "TS" };
+for (const key in address) {
+  console.log(key, address[key]); // Prints key and value
+}
+```
