@@ -209,3 +209,31 @@ for (const key in address) {
   console.log(key, address[key]); // Prints key and value
 }
 ```
+## Functions
+
+Functions are reusable blocks of code that perform a specific task. They help organize code and avoid repetition.
+
+### Function Declaration
+
+```js
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet("Mahesh"); // Output: Hello, Mahesh!
+```
+
+### Function Expression
+
+```js
+const add = function(a, b) {
+  return a + b;
+};
+console.log(add(2, 3)); // Output: 5
+```
+
+### Arrow Function
+
+```js
+const multiply = (x, y) => x * y;
+console.log(multiply(4, 5)); // Output: 20
+```
