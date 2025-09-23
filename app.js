@@ -56,3 +56,29 @@
 //     console.log("function fire")
 // }
 // fire();
+
+
+// getElementById:-
+
+// let heading = document.getElementById("heading");
+
+// console.log(heading.textContent)
+
+// 2. getElementsByClassName:-
+
+// let desc = document.getElementsByClassName("description")// this was returning array
+
+// console.log(desc[0].textContent)
+
+// querySelector:-
+
+// let heading = document.querySelector("#heading")
+// console.log(heading)
+
+// let desc = document.querySelector(".description")
+// console.log(desc)
+
+// querySelectorAll:-
+
+// let desc = document.querySelectorAll(".description")
+// console.log(desc)

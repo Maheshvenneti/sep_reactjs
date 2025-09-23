@@ -237,3 +237,44 @@ console.log(add(2, 3)); // Output: 5
 const multiply = (x, y) => x * y;
 console.log(multiply(4, 5)); // Output: 20
 ```
+
+
+## Query Selectors
+
+Query selectors are used to select and manipulate HTML elements in the DOM.
+
+### 1. `getElementById`
+
+Selects a single element by its ID.
+
+```js
+const heading = document.getElementById('main-heading');
+console.log(heading.textContent);
+```
+
+### 2. `getElementsByClassName`
+
+Selects all elements with a specific class name. Returns an HTMLCollection.
+
+```js
+const items = document.getElementsByClassName('list-item');
+console.log(items[0].textContent);
+```
+
+### 3. `querySelector`
+
+Selects the first element that matches a CSS selector.
+
+```js
+const firstButton = document.querySelector('.btn');
+console.log(firstButton.textContent);
+```
+
+### 4. `querySelectorAll`
+
+Selects all elements that match a CSS selector. Returns a NodeList.
+
+```js
+const allButtons = document.querySelectorAll('.btn');
+allButtons.forEach(btn => console.log(btn.textContent));
+```
